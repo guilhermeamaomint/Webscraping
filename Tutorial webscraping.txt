@@ -1,0 +1,18 @@
+cria uma nova pasta
+copia o endereço dela
+cd no conda
+conda create -n <nome da env> python=3.7
+conda activate <nome da env>
+pip install scrapy
+migra pro pycharm
+pip install Twisted==22.10.0 #pq essa porra n vai sozinha
+scrapy startproject <nome do bglh1>
+cd pro bglh
+scrapy genspider <nome de outro bglh2> <nome de outro bglh2.com> #ALTERA DPS O LINK .COM
+scrapy shell
+(no shell)fetch("<nome do link>") #se der 200 ta de boa
+(no shell)quit()
+scrapy crawl <nome de outro bglh2> -O <nome de outro bglh2>.csv
+
+Espero q tenha dado tudo certo eu mesmo
+Se não deu o repositorio do git do brasileirão é esse: https://github.com/guilhermeamaomint/Webscraping
