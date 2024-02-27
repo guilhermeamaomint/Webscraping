@@ -1,8 +1,15 @@
+###############
+# Bibliotecas #
+###############
+
 import scrapy
 
 
+####################
+# Inicio do codigo #
+####################
+
 class ImdbSpider(scrapy.Spider):
-    name = "futbol"
     start_urls = ['https://www.cbf.com.br/futebol-brasileiro?csrt=8376204594349034325']
 
     def parse(self, response):
@@ -12,6 +19,9 @@ class ImdbSpider(scrapy.Spider):
                 " nome do time": timesa.css('span.hidden-xs::text').get()[:-4],
                 " estado do time": timesa.css('span.hidden-xs::text').get()[-2:]
             }
+#################
+# Fim do codigo #
+#################
 
 
 # for nome in nomesdostimes:
